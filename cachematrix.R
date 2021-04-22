@@ -50,7 +50,7 @@ cacheSolve <- function(x, ...) {
   # If Inverse i is already computed, get inverse from cache
   if(!is.null(i)) {
     message('getting inverse from cached data')
-    i
+    return(i)
   }
   
   # If there is no inverse in cache, then get data
